@@ -2,5 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family:sans-serif;
+}
+body{
+    color: #fff;
+    font-size: 1.3125rem;
+    line-height: 130%;
+}
+.iqpEry{
+    position: relative;
+    z-index: 2;
+    font-size: 0.8em;
+    padding: 0.3rem 0.5rem;
+    background: linear-gradient(270deg, rgb(171, 102, 255) 0%, rgb(20, 241, 149) 101.39%);
+    text-align: center;
+    text-transform: uppercase;
+}
+.link-unstyled{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+.bx{
+    padding: 0.3rem 0.5rem;
+
+}
+
+.link-unstyled:hover{
+    color: #fff;
 }
