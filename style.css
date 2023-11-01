@@ -379,6 +379,11 @@ img {
 .h4, .h5, h4, h5 {
     font-weight: 700;
 }
+.h4, h4 {
+    font-size: 2.625rem;
+    line-height: 110%;
+    letter-spacing: -1px;
+}
 
 .d-block {
     display: block!important;
@@ -638,7 +643,6 @@ element.style {
 }
 .IndexNews_index-news__slider__card__body__OgEP_ {
     text-align: center;
-    width: 90%;
 }
 .IndexNews_index-news__slider__card__body__OgEP_ span {
     display: inline-block;
@@ -754,6 +758,122 @@ element.style {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* community */
+.IndexStats_index-stats__iS8zg {
+    position: relative;
+    overflow: hidden;
+    padding: 125px 0;
+}
+.IndexStats_index-stats__glow-lines__DOhtU {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+element.style {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    inset: 0px;
+    color: transparent;
+}
+.IndexStats_index-stats__glow-lines__DOhtU img {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.pb-10 {
+    padding-bottom: 5rem!important;
+}
+.mt-0 {
+    margin-top: 0!important;
+}
+.IndexStats_index-stats__color--purple__V5Pfs {
+    background: linear-gradient(101.11deg,#f087ff 14.47%,#6e1fce 39.43%,rgba(110,31,206,.1) 76.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.IndexStats_index-stats__color__gZGCK {
+    font-weight: 300;
+    font-size: 70px;
+    line-height: 120%;
+}
+.m-0 {
+    margin: 0!important;
+}
+.IndexStats_index-stats__ff-mono__2IrIe {
+    font-family: DSemi,monospace;
+}
+.subdued {
+    color: #c4c4c4;
+}
+.smaller {
+    font-size: 1rem;
+}
+.text-uppercase {
+    text-transform: uppercase!important;
+}
+.IndexStats_index-stats__color--blue__34ufI {
+    background: linear-gradient(100.93deg,#1fcff1 15.61%,#234cb6 41.38%,rgba(35,76,182,.1) 79.94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.IndexStats_index-stats__color--green__7cpB7 {
+    background: linear-gradient(97.65deg,#19fb9b 11.36%,#199890 54.3%,#005f59 100.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.pt-9 {
+    padding-top: 4rem!important;
+}
+.mt-9 {
+    margin-top: 4rem!important;
+}
+.IndexStats_index-stats__live__Q3h4O {
+    position: relative;
+    line-height: 1!important;
+    padding-left: 10px;
+}
+.IndexStats_index-stats__live__Q3h4O:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background: #1fcff1;
+}
+.IndexStats_index-stats__card__29r6F {
+    background: rgba(0,0,0,.4);
+    border: 1px solid #19161c;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+}
+.p-6 {
+    padding: 2rem!important;
+}
+.IndexStats_index-stats__card__title__3HNFv {
+    border-left: 2px solid;
+    padding-left: 15px;
+}
+.small {
+    font-size: 1.1rem;
+}
+.IndexStats_index-stats__iS8zg:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 125px;
+    background: linear-gradient(#000,transparent 80%);
+}
+
+
+
 
 
 
@@ -805,6 +925,17 @@ element.style {
     }
     .IndexHero_index-hero__ring--large__BYBAU {
         right: -1200px;
+    }
+    .IndexStats_index-stats__color__gZGCK {
+        font-size: 110px;
+    }
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .IndexStats_index-stats__card__29r6F {
+        border: 0;
+        background: rgba(0,0,0,.28);
     }
 }
 
@@ -859,6 +990,33 @@ element.style {
     }
     .IndexNews_index-news__slider__card__body__OgEP_ {
         width: 50%;
+    }
+    .col-lg-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .mb-lg-0 {
+        margin-bottom: 0!important;
+    }
+    .mt-lg-10 {
+        margin-top: 5rem!important;
+    }
+    .d-lg-block {
+        display: block!important;
+    }
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+    .col-lg-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
+    .mt-lg-n10 {
+        margin-top: -5rem!important;
+    }
+    .mt-lg-n8 {
+        margin-top: -3rem!important;
     }
 }
 
