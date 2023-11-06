@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     <title>Solana.com</title>
 </head>
 <body>
@@ -16,17 +19,24 @@
             <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-xl">
                     <a class="d-flex undefined" href="/"><img src="svg/logotype.svg" alt="Solana" width="149" height="22"></a>
-                    <button aria-controls="navbarCollapse" type="button" aria-label="Toggle navigation" class="navbar-toggler collapsed">
+                    <button aria-controls="navbarCollapse" type="button" aria-label="Toggle navigation" class="navbar-toggler collapsed" id="menu">
                         <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span>
+                        
                     </button>
+                    <i class="fa-x" style="color: rgb(253, 251, 251); font-size: 30px; font-style: normal; user-select: none; cursor: pointer; 
+                        position: absolute;
+                        top: 30%;
+                        left: 94%;
+                        display: none;">X</i>
                     <div class="navbar-collapse collapse" id="navbarCollapse">
+                        
                         <ul class="navbar-nav ms-auto">
                             <li style="--color-active:#19fb9b" class="nav-item dropdown">
                                 <button class="nav-link nav-link--primary dropdown-toggle false dropdown-toggle" id="react-aria-1" aria-expanded="false" type="button">Learn<svg width="24" height="24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path fill="currentColor" d="M17.293 8.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.383.03l-6-5.5a1 1 0 1 1 1.352-1.474l5.294 4.853 5.323-5.323Z"></path></g></svg>
                                 </button>
-                                <div aria-labelledby="react-aria-1" data-bs-popper="static" class="dropdown-menu show">
+                                <div aria-labelledby="react-aria-1" data-bs-popper="static" class="dropdown-menu show dropdown-menu-1">
                                     <div class="d-lg-flex">
                                         <div>
                                             <div class="text-uppercase py-2 d-flex align-items-center">
@@ -41,7 +51,7 @@
                             <li style="--color-active:#fed612" class="nav-item dropdown">
                                 <button class="nav-link nav-link--primary dropdown-toggle false dropdown-toggle" id="react-aria-2" aria-expanded="false" type="button">Build<svg width="24" height="24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path fill="currentColor" d="M17.293 8.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.383.03l-6-5.5a1 1 0 1 1 1.352-1.474l5.294 4.853 5.323-5.323Z"></path></g></svg>
                                 </button>
-                                <div aria-labelledby="react-aria-2" data-bs-popper="static" class="dropdown-menu show">
+                                <div aria-labelledby="react-aria-2" data-bs-popper="static" class="dropdown-menu show dropdown-menu-2">
                                     <div class="d-lg-flex">
                                         <div>
                                             <div class="text-uppercase py-2 d-flex align-items-center"><svg class="me-3" width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x=".6" y=".6" width="14.8" height="14.8" fill="#FFD512" fill-opacity=".2" stroke="#FFD512" stroke-width="1.2"></rect><rect x="2" y="6" width="1" height="4" fill="#342C05"></rect><rect x="13" y="6" width="1" height="4" fill="#342C05"></rect><path d="M8 3v10M13 8H3M11.535 4.465l-7.07 7.07M11.535 11.535l-7.07-7.07" stroke="#FFD512" stroke-width="2" stroke-linejoin="bevel"></path><circle cx="8" cy="8" r="4" fill="#FFD512"></circle><circle cx="8" cy="8" r="2" fill="#342C05"></circle><rect x="3" y="3" width="1" height="3" transform="rotate(-180 3 3)" fill="#342C05"></rect></svg>Developers</div>
@@ -60,7 +70,7 @@
                             <li style="--color-active:#FF5722" class="nav-item dropdown">
                                 <button class="nav-link nav-link--primary dropdown-toggle  dropdown-toggle" id="react-aria-3" aria-expanded="false" type="button">Solutions<svg width="24" height="24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path fill="currentColor" d="M17.293 8.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.383.03l-6-5.5a1 1 0 1 1 1.352-1.474l5.294 4.853 5.323-5.323Z"></path></g></svg>
                                 </button>
-                                <div aria-labelledby="react-aria-3" data-bs-popper="static" class="dropdown-menu show">
+                                <div aria-labelledby="react-aria-3" data-bs-popper="static" class="dropdown-menu show dropdown-menu-3">
                                     <div class="d-lg-flex" style="min-width: 500px;">
                                         <div class="w-50">
                                             <div class="text-uppercase py-2 d-flex align-items-center"><svg class="me-3" width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x=".6" y=".6" width="14.8" height="14.8" fill="#FF5722" fill-opacity=".2" stroke="#FF5722" stroke-width="1.2"></rect><rect x="2" y="6" width="1" height="4" fill="#342C05"></rect><rect x="13" y="6" width="1" height="4" fill="#342C05"></rect><path d="M8 3v10M13 8H3M11.535 4.465l-7.07 7.07M11.535 11.535l-7.07-7.07" stroke="#FF5722" stroke-width="2" stroke-linejoin="bevel"></path><circle cx="8" cy="8" r="4" fill="#FF5722"></circle><circle cx="8" cy="8" r="2" fill="#342C05"></circle><rect x="3" y="3" width="1" height="3" transform="rotate(-180 3 3)" fill="#342C05"></rect></svg>Tools</div>
@@ -91,7 +101,7 @@
                             <li style="--color-active:#9945ff" class="nav-item dropdown">
                                 <button class="nav-link nav-link--primary dropdown-toggle false dropdown-toggle" id="react-aria-4" aria-expanded="false" type="button">Network<svg width="24" height="24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path fill="currentColor" d="M17.293 8.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.383.03l-6-5.5a1 1 0 1 1 1.352-1.474l5.294 4.853 5.323-5.323Z"></path></g></svg>
                                 </button>
-                                <div aria-labelledby="react-aria-4" data-bs-popper="static" class="dropdown-menu show">
+                                <div aria-labelledby="react-aria-4" data-bs-popper="static" class="dropdown-menu show dropdown-menu-4">
                                     <div class="d-lg-flex">
                                         <div><div class="text-uppercase py-2 d-flex align-items-center"><svg class="me-3" width="18" height="19" viewBox="0 0 18 19" fill="none"><rect x="0.790609" y="5.58686" width="10.1362" height="12.6083" rx="1.3" transform="rotate(-8 0.790609 5.58686)" fill="#9945FF" fill-opacity="0.2" stroke="#9945FF" stroke-width="1.4"></rect><rect x="7.17194" y="0.790609" width="10.1362" height="12.6083" rx="1.3" transform="rotate(8 7.17194 0.790609)" fill="#9945FF" fill-opacity="0.3" stroke="#9945FF" stroke-width="1.4"></rect></svg>Resources</div>
                                         <div><a class="nav-link nav-link--secondary" href="/validators"><strong class="d-block text-white">Become a Validator</strong>Help run the Solana network.</a><a class="nav-link nav-link--secondary" href="/rpc"><strong class="d-block text-white">RPC Providers</strong>Build crypto apps that scale.</a><a href="https://status.solana.com/" class="nav-link nav-link--secondary" rel="noopener noreferrer" target="_blank"><strong class="d-block text-white">Network Status</strong>Network performance and status.</a>
@@ -108,7 +118,7 @@
                             <li style="--color-active:#f087ff" class="nav-item dropdown">
                                 <button class="nav-link nav-link--primary dropdown-toggle false dropdown-toggle" id="react-aria-5" aria-expanded="false" type="button">Community<svg width="24" height="24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path fill="currentColor" d="M17.293 8.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.383.03l-6-5.5a1 1 0 1 1 1.352-1.474l5.294 4.853 5.323-5.323Z"></path></g></svg>
                                 </button>
-                                <div aria-labelledby="react-aria-5" data-bs-popper="static" class="dropdown-menu show">
+                                <div aria-labelledby="react-aria-5" data-bs-popper="static" class="dropdown-menu show dropdown-menu-5">
                                     <div class="d-lg-flex"><div>
                                         <div class="text-uppercase py-2 d-flex align-items-center"><svg class="me-3" width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="9.992" cy="9.992" r="8.587" transform="rotate(-45 9.992 9.992)" fill="#F087FF" fill-opacity=".2" stroke="#F087FF" stroke-width="1.2"></circle><path d="M5.392 2.528a2.025 2.025 0 1 1-2.864 2.864 2.025 2.025 0 0 1 2.864-2.864ZM17.456 14.592a2.025 2.025 0 1 1-2.864 2.863 2.025 2.025 0 0 1 2.864-2.863ZM17.456 5.392a2.025 2.025 0 1 1-2.864-2.864 2.025 2.025 0 0 1 2.864 2.864ZM5.392 17.455a2.025 2.025 0 1 1-2.864-2.863 2.025 2.025 0 0 1 2.864 2.863Z" fill="#36203A" stroke="#F087FF" stroke-width="1.2"></path><circle cx="9.992" cy="9.992" r="3.337" transform="rotate(-45 9.992 9.992)" stroke="#F087FF" stroke-width="1.2"></circle></svg>Get involved</div>
                                         <div>
@@ -196,152 +206,144 @@
             <div class="mb-8 IndexNews_index-news__AipJY">
                 <div class="container">
                     <div class="IndexNews_index-news__slider__KEK_Q">
-                        <div class="slick-slider slick-initialized" dir="ltr">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="slick-arrow slick-prev" style="display: block;">
-                                <polyline points="15 18 9 12 15 6"></polyline>
-                            </svg>
-                            <div class="slick-list">
-                                <div class="slick-track" style="width: 9720px; opacity: 1; transform: translate3d(-4320px, 0px, 0px);">
-                                    <div data-index="-1" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 1080px;">
+                        <div class="swiper-container slick-slider slick-initialized" dir="ltr">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="slick-arrow slick-prev" style="display: block;"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                            <div class="swiper-wrapper slick-list">
+                                <div class="slick-track" style="width: 9240px; opacity: 1; transform: translate3d(-840px, 0px, 0px);">
+                                    <div data-index="-1" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 840px;">
                                         <div>
-                                            <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
-                                                <div class="IndexNews_index-news__slider__card__img__ENphm">
-                                                    <img alt="Hyperdrive: The New Solana Hackathon" loading="lazy" decoding="async" data-nimg="fill" style="position: absolute; height: 100%; width: 100%; inset: 0px;" sizes="100vw" src="/img/hyperdrive.webp">
-                                                </div>
-                                                <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">$1 million in prizes</span>
-                                                    <h2 class="h5 mt-3 fw-normal">Hyperdrive: The New Solana Hackathon</h2>
-                                                    <p class="mb-5 small">Compete with thousands of others to build the next big blockchain startup, with more than $1 million in prizes and seed funding.</p>
-                                                    <a target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift" href="/hyperdrive">View hackathon</a>
+                                            <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block"><div class="IndexNews_index-news__slider__card__img__ENphm">
+                                                <img alt="Breakpoint Starts With Community Keynote" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="/img/keynote.webp">
+                                            </div>
+                                            <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Breakpoint 2023</span>
+                                                <h2 class="h5 mt-3 fw-normal">Breakpoint Starts With Community Keynote</h2>
+                                                <p class="mb-5 small">Community luminaries like Solana Labs’ Anatoly Yakovenko, Helius’ Mert Mumtaz, and the Solana Foundation’s Dan Albert look back at 2023, and forward to the rest of Breakpoint.</p>
+                                                <a href="https://www.youtube.com/watch?v=1X1Vk8XQ6OQ" target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift">Watch talk</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-index="0" class="swiper-slide slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 840px;">
+                                    <div>
+                                        <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
+                                            <div class="IndexNews_index-news__slider__card__img__ENphm">
+                                                <img alt="Meet the Winners of the Hyperdrive Hackathon" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="/img/hyperdrive.webp">
+                                            </div>
+                                            <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Solana Hackathon</span><h2 class="h5 mt-3 fw-normal">Meet the Winners of the Hyperdrive Hackathon</h2><p class="mb-5 small">As announced live on the Breakpoint 2023 stage, the Grand Champion winner out of over 900 submissions took advantage of AI to make it easy to interact with the blockchain.</p><a target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift " href="/news/solana-hyperdrive-hackathon-winners">See the winners</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div data-index="1" class="swiper-slide slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 840px;">
+                                    <div>
+                                        <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
+                                            <div class="IndexNews_index-news__slider__card__img__ENphm">
+                                                <img alt="The Render Network Migrates to Solana" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="img/render.webp">
+                                            </div>
+                                            <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Breakpoint 2023</span><h2 class="h5 mt-3 fw-normal">The Render Network Migrates to Solana</h2><p class="mb-5 small">The Render Network, the world’s leading decentralized compute network, announced on stage at Breakpoint 2023 that they have successfully upgraded its core infrastructure to Solana.</p><a href="https://www.cryptotimes.io/render-network-to-solana-launches-token-incentives/" target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift">Read</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-index="2" class="swiper-slide slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 840px;">
+                                    <div>
+                                        <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
+                                            <div class="IndexNews_index-news__slider__card__img__ENphm">
+                                                <img alt="The Block: “Solana Data Now Live on Google Cloud's BigQuery”" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="/img/google-cloud.webp">
+                                            </div>
+                                            <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Breakpoint 2023</span><h2 class="h5 mt-3 fw-normal">The Block: “Solana Data Now Live on Google Cloud's BigQuery”</h2><p class="mb-5 small">Google Cloud BigQuery is a resource that allows anyone to access archival data and analytical insights.</p><a href="https://www.theblock.co/post/258770/solana-live-on-google-cloud-bigquery" target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift">Read</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-index="3" class="swiper-slide slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 840px;">
+                                    <div>
+                                        <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
+                                            <div class="IndexNews_index-news__slider__card__img__ENphm">
+                                                <img alt="Solana Blockchain Node Development Blueprints Available on AWS" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="/img/aws.webp"></div><div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Breakpoint 2023</span><h2 class="h5 mt-3 fw-normal">Solana Blockchain Node Development Blueprints Available on AWS</h2><p class="mb-5 small">Solana nodes are now available for quick deployment on AWS with the help of infrastructure as code app in AWS Blockchain Node Runners repository.</p><a target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift " href="/news/solana-blockchain-node-development-blueprints-available-on-aws">Read</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div data-index="0" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 1080px;">
+                                    <div data-index="4" class="swiper-slide slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 840px;">
+                                        <div>
+                                            <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
+                                                <div class="IndexNews_index-news__slider__card__img__ENphm"><img alt="Breakpoint Starts With Community Keynote" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="/img/keynote.webp">
+                                                </div>
+                                                <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Breakpoint 2023</span><h2 class="h5 mt-3 fw-normal">Breakpoint Starts With Community Keynote</h2><p class="mb-5 small">Community luminaries like Solana Labs’ Anatoly Yakovenko, Helius’ Mert Mumtaz, and the Solana Foundation’s Dan Albert look back at 2023, and forward to the rest of Breakpoint.</p><a href="https://www.youtube.com/watch?v=1X1Vk8XQ6OQ" target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift">Watch talk</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-index="5" tabindex="-1" class="swiper-slide slick-slide slick-cloned" aria-hidden="true" style="width: 840px;">
                                         <div>
                                             <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
                                                 <div class="IndexNews_index-news__slider__card__img__ENphm">
-                                                    <img alt="Messari's State of Solana Q3 2023" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="/img/messari.webp">
+                                                    <img alt="Meet the Winners of the Hyperdrive Hackathon" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="img/hyperdrive.webp">
                                                 </div>
-                                                <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Report</span>
-                                                    <h2 class="h5 mt-3 fw-normal">Messari's State of Solana Q3 2023</h2>
-                                                    <p class="mb-5 small">Solana's transaction fees remain among the lowest in web3, reports Messari. See the latest overview of the Solana network by the numbers in this third-party review.</p>
-                                                    <a href="https://messari.io/report/state-of-solana-q3-2023" target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift">Read the report</a>
+                                                <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Solana Hackathon</span><h2 class="h5 mt-3 fw-normal">Meet the Winners of the Hyperdrive Hackathon</h2><p class="mb-5 small">As announced live on the Breakpoint 2023 stage, the Grand Champion winner out of over 900 submissions took advantage of AI to make it easy to interact with the blockchain.</p><a target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift" href="/news/solana-hyperdrive-hackathon-winners">See the winners</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 1080px;">
+                                    <div data-index="6" tabindex="-1" class="swiper-slide slick-slide slick-cloned" aria-hidden="true" style="width: 840px;">
                                         <div>
                                             <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
                                                 <div class="IndexNews_index-news__slider__card__img__ENphm">
-                                                    <img alt="Fortune (Sep. 5, 2023), &quot;Visa to send stablecoin USDC over Solana to help pay merchants in crypto,&quot; by Ben Weiss" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="/img/visa.webp">
+                                                    <img alt="The Render Network Migrates to Solana" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="img/render.webp">
                                                 </div>
-                                                <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">News</span>
-                                                    <h2 class="h5 mt-3 fw-normal">Fortune (Sep. 5, 2023), "Visa to send stablecoin USDC over Solana to help pay merchants in crypto," by Ben Weiss</h2>
-                                                    <p class="mb-5 small">"Visa said on Tuesday that it would begin to send USDC, the second-largest stablecoin by market capitalization, to select merchants via the Solana blockchain in a newly announced pilot."</p>
-                                                    <a href="https://fortune.com/crypto/2023/09/05/visa-stablecoin-usdc-solana-worldpay-nuvei-merchants-payments/" target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift">Read more</a>
+                                                <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Breakpoint 2023</span><h2 class="h5 mt-3 fw-normal">The Render Network Migrates to Solana</h2><p class="mb-5 small">The Render Network, the world’s leading decentralized compute network, announced on stage at Breakpoint 2023 that they have successfully upgraded its core infrastructure to Solana.</p><a href="https://www.cryptotimes.io/render-network-to-solana-launches-token-incentives/" target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift">Read</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 1080px;">
+                                    <div data-index="7" tabindex="-1" class="swiper-slide slick-slide slick-cloned" aria-hidden="true" style="width: 840px;">
                                         <div>
                                             <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
-                                                <div class="IndexNews_index-news__slider__card__img__ENphm">
-                                                    <img alt="Breakpoint 2023: New City, New Vibes" loading="lazy" decoding="async" data-nimg="fill" style="position: absolute; height: 100%; width: 100%; inset: 0px;" sizes="100vw" src="/img/breakpoint.webp">
+                                                <div class="IndexNews_index-news__slider__card__img__ENphm"><img alt="The Block: “Solana Data Now Live on Google Cloud's BigQuery”" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="img/google-cloud.webp">
                                                 </div>
-                                                <div class="IndexNews_index-news__slider__card__body__OgEP_">
-                                                    <span class="text-uppercase smaller">Amsterdam Oct. 31 - Nov. 3</span>
-                                                    <h2 class="h5 mt-3 fw-normal">Breakpoint 2023: New City, New Vibes</h2>
-                                                    <p class="mb-5 small">Join the brightest web3 developers, and creators from across the globe to learn, network and build toward a decentralized and borderless world.</p><a target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift" href="/breakpoint">Get tickets</a>
+                                                <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Breakpoint 2023</span><h2 class="h5 mt-3 fw-normal">The Block: “Solana Data Now Live on Google Cloud's BigQuery”</h2><p class="mb-5 small">Google Cloud BigQuery is a resource that allows anyone to access archival data and analytical insights.</p><a href="https://www.theblock.co/post/258770/solana-live-on-google-cloud-bigquery" target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift">Read</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div data-index="3" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 1080px;">
+                                    <div data-index="8" tabindex="-1" class="swiper-slide slick-slide slick-cloned" aria-hidden="true" style="width: 840px;">
                                         <div>
                                             <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
                                                 <div class="IndexNews_index-news__slider__card__img__ENphm">
-                                                    <img alt="Hyperdrive: The New Solana Hackathon" loading="lazy" decoding="async" data-nimg="fill" style="position: absolute; height: 100%; width: 100%; inset: 0px;" sizes="100vw" src="/img/hyperdrive.webp">
+                                                    <img alt="Solana Blockchain Node Development Blueprints Available on AWS" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="img/aws.webp">
                                                 </div>
-                                                <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">$1 million in prizes</span>
-                                                    <h2 class="h5 mt-3 fw-normal">Hyperdrive: The New Solana Hackathon</h2>
-                                                    <p class="mb-5 small">Compete with thousands of others to build the next big blockchain startup, with more than $1 million in prizes and seed funding.</p>
-                                                    <a target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift" href="/hyperdrive">View hackathon</a>
+                                                <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Breakpoint 2023</span><h2 class="h5 mt-3 fw-normal">Solana Blockchain Node Development Blueprints Available on AWS</h2><p class="mb-5 small">Solana nodes are now available for quick deployment on AWS with the help of infrastructure as code app in AWS Blockchain Node Runners repository.</p><a target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift" href="/news/solana-blockchain-node-development-blueprints-available-on-aws">Read</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div data-index="4" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 1080px;">
+                                    <div data-index="9" tabindex="-1" class="swiper-slide slick-slide slick-cloned" aria-hidden="true" style="width: 840px;">
                                         <div>
                                             <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
                                                 <div class="IndexNews_index-news__slider__card__img__ENphm">
-                                                    <img alt="Messari's State of Solana Q3 2023" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="/img/messari.webp">
+                                                    <img alt="Breakpoint Starts With Community Keynote" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="/img/keynote.webp">
                                                 </div>
-                                                <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Report</span>
-                                                    <h2 class="h5 mt-3 fw-normal">Messari's State of Solana Q3 2023</h2>
-                                                    <p class="mb-5 small">Solana's transaction fees remain among the lowest in web3, reports Messari. See the latest overview of the Solana network by the numbers in this third-party review.</p>
-                                                    <a href="https://messari.io/report/state-of-solana-q3-2023" target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift">Read the report</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-index="5" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 1080px;">
-                                        <div>
-                                            <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
-                                                <div class="IndexNews_index-news__slider__card__img__ENphm">
-                                                    <img alt="Fortune (Sep. 5, 2023), &quot;Visa to send stablecoin USDC over Solana to help pay merchants in crypto,&quot; by Ben Weiss" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="/img/visa.webp">
-                                                </div>
-                                                <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">News</span>
-                                                    <h2 class="h5 mt-3 fw-normal">Fortune (Sep. 5, 2023), "Visa to send stablecoin USDC over Solana to help pay merchants in crypto," by Ben Weiss</h2>
-                                                    <p class="mb-5 small">"Visa said on Tuesday that it would begin to send USDC, the second-largest stablecoin by market capitalization, to select merchants via the Solana blockchain in a newly announced pilot."</p>
-                                                    <a href="https://fortune.com/crypto/2023/09/05/visa-stablecoin-usdc-solana-worldpay-nuvei-merchants-payments/" target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift">Read more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-index="6" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 1080px;">
-                                        <div>
-                                            <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
-                                                <div class="IndexNews_index-news__slider__card__img__ENphm">
-                                                    <img alt="Breakpoint 2023: New City, New Vibes" loading="lazy" decoding="async" data-nimg="fill" style="position: absolute; height: 100%; width: 100%; inset: 0px;" sizes="100vw" src="/img/breakpoint.webp">
-                                                </div>
-                                                <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Amsterdam Oct. 31 - Nov. 3</span>
-                                                    <h2 class="h5 mt-3 fw-normal">Breakpoint 2023: New City, New Vibes</h2>
-                                                    <p class="mb-5 small">Join the brightest web3 developers, and creators from across the globe to learn, network and build toward a decentralized and borderless world.</p>
-                                                    <a target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift" href="/breakpoint">Get tickets</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-index="7" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 1080px;">
-                                        <div>
-                                            <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
-                                                <div class="IndexNews_index-news__slider__card__img__ENphm">
-                                                    <img alt="Hyperdrive: The New Solana Hackathon" loading="lazy" decoding="async" data-nimg="fill" style="position: absolute; height: 100%; width: 100%; inset: 0px;" sizes="100vw" src="/img/hyperdrive.webp">
-                                                </div>
-                                                <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">$1 million in prizes</span>
-                                                    <h2 class="h5 mt-3 fw-normal">Hyperdrive: The New Solana Hackathon</h2>
-                                                    <p class="mb-5 small">Compete with thousands of others to build the next big blockchain startup, with more than $1 million in prizes and seed funding.</p>
-                                                    <a target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift" href="/hyperdrive">View hackathon</a>
-                                                </div>
+                                                <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Breakpoint 2023</span><h2 class="h5 mt-3 fw-normal">Breakpoint Starts With Community Keynote</h2><p class="mb-5 small">Community luminaries like Solana Labs’ Anatoly Yakovenko, Helius’ Mert Mumtaz, and the Solana Foundation’s Dan Albert look back at 2023, and forward to the rest of Breakpoint.</p><a href="https://www.youtube.com/watch?v=1X1Vk8XQ6OQ" target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift">Watch talk</a></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="slick-arrow slick-next" style="display: block;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+
+                            <div class="swiper-pagination"></div>
                             <ul style="display:block" class="slick-dots">
-                                <li class=""><button>1</button></li>
+                                <li class="slick-active"><button>1</button></li>
                                 <li class=""><button>2</button></li>
                                 <li class=""><button>3</button></li>
-                                <li class="slick-active"><button>4</button></li>
+                                <li class=""><button>4</button></li>
+                                <li class=""><button>5</button></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-
             <!-- community -->
             <div>
                 <div class="IndexStats_index-stats__iS8zg">
@@ -494,23 +496,23 @@
                             <h2 class="h4 mb-0">Build for growth.</h2>
                             <ul class="IndexUseCases_index-usecases__nav__rnTUy">
                                 <li class="mt-2 mt-md-0">
-                                    <button type="button" class="IndexUseCases_index-usecases__nav-item__flEJi IndexUseCases_index-usecases__nav-item--active__NUWgO">Payments</button>
+                                    <button type="button" class="IndexUseCases_index-usecases__nav-item__flEJi IndexUseCases_index-usecases__nav-item--active__NUWgO payments">Payments</button>
                                 </li>
                                 <li class="mt-2 mt-md-0">
-                                    <button type="button" class="IndexUseCases_index-usecases__nav-item__flEJi">Gaming</button>
+                                    <button type="button" class="IndexUseCases_index-usecases__nav-item__flEJi game">Gaming</button>
                                 </li>
-                                <li class="mt-2 mt-md-0">
+                                <li class="mt-2 mt-md-0 nfts">
                                     <button type="button" class="IndexUseCases_index-usecases__nav-item__flEJi">NFTs</button>
                                 </li>
                                 <li class="mt-2 mt-md-0">
-                                    <button type="button" class="IndexUseCases_index-usecases__nav-item__flEJi">DeFi</button>
+                                    <button type="button" class="IndexUseCases_index-usecases__nav-item__flEJi defi">DeFi</button>
                                 </li>
-                                <li class="mt-2 mt-md-0">
+                                <li class="mt-2 mt-md-0 daos">
                                     <button type="button" class="IndexUseCases_index-usecases__nav-item__flEJi">DAOs</button>
                                 </li>
                             </ul>
                         </div>
-                        <div class="d-block">
+                        <div class="d-block dn1">
                             <div class="d-flex flex-column-reverse flex-md-row overflow-hidden IndexUseCases_index-usecases__tab-content__PbOjy">
                                 <div class="w-md-50">
                                     <div class="IndexUseCases_index-usecases__tab-content__img-cover__owv2w">
@@ -548,7 +550,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="d-none d-lg-flex IndexUseCases_index-usecases__tab-content__logos__sOYEO" style="gap: 1rem;">
+                            <!-- <div class="d-none d-lg-flex IndexUseCases_index-usecases__tab-content__logos__sOYEO" style="gap: 1rem;">
                                 <div class="IndexUseCases_index-usecases__tab-content__logo__2FQZH">
                                     <img alt="" loading="lazy" width="100" height="30" decoding="async" data-nimg="1" src="/svg/asics (1).svg">
                                 </div>
@@ -561,9 +563,9 @@
                                 <div class="IndexUseCases_index-usecases__tab-content__logo__2FQZH">
                                     <img alt="" loading="lazy" width="100" height="30" decoding="async" data-nimg="1" src="/svg/tiplink (4).svg">
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
-                        <div class="d-none">
+                        <div class="d-none dn2">
                             <div class="d-flex flex-column-reverse flex-md-row overflow-hidden IndexUseCases_index-usecases__tab-content__PbOjy">
                                 <div class="w-md-50">
                                     <div class="IndexUseCases_index-usecases__tab-content__img-cover__owv2w">
@@ -611,7 +613,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="d-none d-lg-flex IndexUseCases_index-usecases__tab-content__logos__sOYEO" style="gap: 1rem;">
+                        <!-- <div class="d-none d-lg-flex IndexUseCases_index-usecases__tab-content__logos__sOYEO" style="gap: 1rem;">
                             <div class="IndexUseCases_index-usecases__tab-content__logo__2FQZH">
                                 <img alt="" loading="lazy" width="100" height="30" decoding="async" data-nimg="1" src="/svg/br1.webp" style="color: transparent;">
                             </div>
@@ -633,9 +635,9 @@
                             <div class="IndexUseCases_index-usecases__tab-content__logo__2FQZH">
                                 <img alt="" loading="lazy" width="100" height="30" decoding="async" data-nimg="1" src="/svg/br7.svg" style="color: transparent;">
                             </div>
-                        </div>
+                        </div> -->
                     </div>
-                    <div class="d-none">
+                    <div class="d-none dn3">
                         <div class="d-flex flex-column-reverse flex-md-row overflow-hidden IndexUseCases_index-usecases__tab-content__PbOjy"><div class="w-md-50">
                             <div class="IndexUseCases_index-usecases__tab-content__img-cover__owv2w">
                                 <img alt="" loading="lazy" decoding="async" data-nimg="fill" sizes="100vw" src="/img/img/anybodies.webp" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
@@ -677,7 +679,7 @@
                             </button>
                             </div>
                         </div>
-                        <div class="d-none d-lg-flex IndexUseCases_index-usecases__tab-content__logos__sOYEO" style="gap: 1rem;">
+                        <!-- <div class="d-none d-lg-flex IndexUseCases_index-usecases__tab-content__logos__sOYEO" style="gap: 1rem;">
                             <div class="IndexUseCases_index-usecases__tab-content__logo__2FQZH">
                                 <img alt="" loading="lazy" width="100" height="30" decoding="async" data-nimg="1" src="/svg/claynosaurz.webp" style="color: transparent;">
                             </div>
@@ -689,9 +691,9 @@
                                 </div>
                                 <div class="IndexUseCases_index-usecases__tab-content__logo__2FQZH"><img alt="" loading="lazy" width="100" height="30" decoding="async" data-nimg="1" src="/svg/okb.webp" style="color: transparent;">
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
-                        <div class="d-none">
+                        <div class="d-none dn4">
                             <div class="d-flex flex-column-reverse flex-md-row overflow-hidden IndexUseCases_index-usecases__tab-content__PbOjy">
                                 <div class="w-md-50">
                                     <div class="IndexUseCases_index-usecases__tab-content__img-cover__owv2w">
@@ -733,7 +735,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="d-none d-lg-flex IndexUseCases_index-usecases__tab-content__logos__sOYEO" style="gap: 1rem;">
+                        <!-- <div class="d-none d-lg-flex IndexUseCases_index-usecases__tab-content__logos__sOYEO" style="gap: 1rem;">
                             <div class="IndexUseCases_index-usecases__tab-content__logo__2FQZH">
                                 <img alt="" loading="lazy" width="100" height="30" decoding="async" data-nimg="1" src="/svg/solend.svg" style="color: transparent;">
                             </div>
@@ -746,9 +748,9 @@
                             <div class="IndexUseCases_index-usecases__tab-content__logo__2FQZH">
                                 <img alt="" loading="lazy" width="100" height="30" decoding="async" data-nimg="1" src="/svg/orca.svg" style="color: transparent;">
                             </div>
-                        </div>
+                        </div> -->
                     </div>
-                    <div class="d-none">
+                    <div class="d-none dn5">
                         <div class="d-flex flex-column-reverse flex-md-row overflow-hidden IndexUseCases_index-usecases__tab-content__PbOjy"><div class="w-md-50">
                             <div class="IndexUseCases_index-usecases__tab-content__img-cover__owv2w">
                                 <img alt="" loading="lazy" decoding="async" data-nimg="fill" sizes="100vw" src="/svg/monkedao img.webp" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
@@ -785,7 +787,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="d-none d-lg-flex IndexUseCases_index-usecases__tab-content__logos__sOYEO" style="gap: 1rem;">
+                    <!-- <div class="d-none d-lg-flex IndexUseCases_index-usecases__tab-content__logos__sOYEO" style="gap: 1rem;">
                         <div class="IndexUseCases_index-usecases__tab-content__logo__2FQZH">
                             <img alt="" loading="lazy" width="100" height="30" decoding="async" data-nimg="1" src="/svg/grape.svg" style="color: transparent;">
                         </div>
@@ -795,7 +797,7 @@
                         <div class="IndexUseCases_index-usecases__tab-content__logo__2FQZH">
                             <img alt="" loading="lazy" width="100" height="30" decoding="async" data-nimg="1" src="/svg/realms.svg" style="color: transparent;">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -1111,6 +1113,7 @@
     
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="script.js"></script>
 </body>
