@@ -98,16 +98,29 @@ document.querySelector('.fa-x').addEventListener('click', () =>{
 
 // initialise swiper
 
-var swiper = new Swiper(".slick-initialized", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 7500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  loop:true,
-});
+// var swiper = new Swiper(".slick-track", {
+//   spaceBetween: 30,
+//   centeredSlides: true,
+//   autoplay: {
+//     delay: 7500,
+//     disableOnInteraction: false,
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   loop:true,
+// });
+
+window.onload=function(){
+  $('.slick-track').slick({
+  autoplay:true,
+  autoplaySpeed:3500,
+  arrows:true,
+  prevArrow:'<button type="button" class="slick-prev"></button>',
+  nextArrow:'<button type="button" class="slick-next"></button>',
+  slidesToShow:3,
+  slidesToScroll:3,
+  dots:true,
+  });
+};
