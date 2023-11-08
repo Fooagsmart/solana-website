@@ -1663,6 +1663,7 @@ p {
     .gvRJNM[data-overflowing="both"] .overlay-right, .gvRJNM[data-overflowing="right"] .overlay-right {
         display: flex;
     }
+    
 }
 
 @media(max-width: 992px){
@@ -1676,6 +1677,10 @@ p {
 
     .nav-item .show{
         display: none;
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+        max-width: 100%;
     }
 }
 @media(min-width: 768px){
