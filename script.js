@@ -112,15 +112,77 @@ document.querySelector('.fa-x').addEventListener('click', () =>{
 //   loop:true,
 // });
 
-window.onload=function(){
-  $('.slick-track').slick({
-  autoplay:true,
-  autoplaySpeed:3500,
-  arrows:true,
-  prevArrow:'<button type="button" class="slick-prev"></button>',
-  nextArrow:'<button type="button" class="slick-next"></button>',
-  slidesToShow:3,
-  slidesToScroll:3,
-  dots:true,
-  });
-};
+// window.onload=function(){
+//   $('.slick-track').slick({
+//   autoplay:true,
+//   autoplaySpeed:3000,
+//   arrows:true,
+//   prevArrow:'<button type="button" class="slick-prev"></button>',
+//   nextArrow:'<button type="button" class="slick-next"></button>',
+//   slidesToShow:3,
+//   slidesToScroll:3,
+//   dots:true,
+//   });
+// };
+
+
+new SimpleSlider('.simple-slider-first', {
+  speed: 600,
+  autoplay: true,
+  class: {
+    wrapper: 'slider-wrapper'
+  },
+  onChange: function() {
+    console.log('Slide changed !');
+  }
+});
+
+// const leftButton = document.querySelector('.leftButton');
+// const rightButton = document.querySelector('.rightButton');
+// const slides = document.querySelector('.slides');
+// const container = document.querySelector('.container');
+
+// let page = 0;
+
+// leftButton.addEventListener('click', () => {
+//   if (page > 0) {
+//     page--;
+//     slides.style.transform = `translateX(${(page) * -100}%)`;
+//   }
+// });
+
+// rightButton.addEventListener('click', () => {
+//   if (page < slides.children.length - 1) {
+//     page++;
+//     slides.style.transform = `translateX(${(page) * -100}%)`;
+//   }
+// });
+
+// let intervalId;
+
+// function triggerAutoPlay() {
+//   intervalId = setInterval(() => {
+//     if (page < slides.children.length - 1) {
+//       page++;
+//       slides.style.transform = `translateX(${(page) * -100}%)`;
+//     } else if (page === slides.children.length - 1) {
+//       page = 0;
+//       slides.style.transform = `translateX(0)`;
+//     }
+//   }, 1000);
+// }
+
+// function stopAutoPlay() {
+//   console.log('heellllllo')
+//   clearInterval(intervalId);
+// }
+
+// container.addEventListener('mouseover', () => {
+//   stopAutoPlay();
+// });
+
+// container.addEventListener('mouseout', () => {
+//   triggerAutoPlay();
+// });
+
+// triggerAutoPlay();

@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css"/>
     <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css"/> -->
+    <link rel="stylesheet" href="https://unpkg.com/simpleslider-js@1.9.0/dist/simpleSlider.min.css">
 
     <title>Solana.com</title>
 </head>
@@ -204,16 +205,18 @@
                 </div>
             </div>
 
-            <!-- index-news -->
-            <div class="mb-8 IndexNews_index-news__AipJY">
+            <!-- index-news -->              
+             <div class="mb-8 IndexNews_index-news__AipJY">
                 <div class="container">
-                    <div class="IndexNews_index-news__slider__KEK_Q">
-                        <div class="swiper-container slick-slider slick-initialized" dir="ltr">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="slick-arrow slick-prev" style="display: block;"><polyline points="15 18 9 12 15 6"></polyline></svg>
-                            <div class="swiper-wrapper slick-list">
-                                <div class="slick-track" style="width: 9240px; opacity: 1; transform: translate3d(-840px, 0px, 0px);">
-                                    <div data-index="-1" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 840px;">
-                                        <div>
+                  <div class="IndexNews_index-news__slider__KEK_Q">
+
+
+                    <div class="simple-slider simple-slider-first">
+                        <div class="slider-wrapper">
+                          <!-- First slide -->
+                          <div class="slider-slide" style="background-image: url('path/to/image')">
+                            <!-- Any HTML content -->
+                              <div>
                                             <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block"><div class="IndexNews_index-news__slider__card__img__ENphm">
                                                 <img alt="Breakpoint Starts With Community Keynote" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="/img/keynote.webp">
                                             </div>
@@ -224,48 +227,88 @@
                                             </div>
                                         </div>
                                     </div>
+                          </div>
+                      
+                          <!-- Second slide -->
+                          <div class="slider-slide" style="background-image: url('path/to/image')">
+                            <!-- Any HTML content -->
+                            <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
+                                <div class="IndexNews_index-news__slider__card__img__ENphm">
+                                    <img alt="Meet the Winners of the Hyperdrive Hackathon" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="/img/hyperdrive.webp">
+                                </div>
+                                <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Solana Hackathon</span><h2 class="h5 mt-3 fw-normal">Meet the Winners of the Hyperdrive Hackathon</h2><p class="mb-5 small">As announced live on the Breakpoint 2023 stage, the Grand Champion winner out of over 900 submissions took advantage of AI to make it easy to interact with the blockchain.</p><a target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift " href="/news/solana-hyperdrive-hackathon-winners">See the winners</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                      
+                          <!-- Third slide -->
+                          <div class="slider-slide" style="background-image: url('path/to/image')">
+                            <!-- Any HTML content -->
+                            <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
+                                <div class="IndexNews_index-news__slider__card__img__ENphm">
+                                    <img alt="The Render Network Migrates to Solana" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="img/render.webp">
+                                </div>
+                                <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Breakpoint 2023</span><h2 class="h5 mt-3 fw-normal">The Render Network Migrates to Solana</h2><p class="mb-5 small">The Render Network, the world’s leading decentralized compute network, announced on stage at Breakpoint 2023 that they have successfully upgraded its core infrastructure to Solana.</p><a href="https://www.cryptotimes.io/render-network-to-solana-launches-token-incentives/" target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift">Read</a>
+                                </div>
+                            </div>
+                          </div>
+                              <!-- fourth slide -->
+                              <div class="slider-slide" style="background-image: url('path/to/image')">
+                                <!-- Any HTML content -->
+                                <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
+                                    <div class="IndexNews_index-news__slider__card__img__ENphm">
+                                        <img alt="The Block: “Solana Data Now Live on Google Cloud's BigQuery”" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="/img/google-cloud.webp">
+                                    </div>
+                                    <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Breakpoint 2023</span><h2 class="h5 mt-3 fw-normal">The Block: “Solana Data Now Live on Google Cloud's BigQuery”</h2><p class="mb-5 small">Google Cloud BigQuery is a resource that allows anyone to access archival data and analytical insights.</p><a href="https://www.theblock.co/post/258770/solana-live-on-google-cloud-bigquery" target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift">Read</a>
+                                    </div>
+                                </div>
+                              </div>
+                                  <!-- fifth slide -->
+                          <div class="slider-slide" style="background-image: url('path/to/image')">
+                            <!-- Any HTML content -->
+                            <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
+                                <div class="IndexNews_index-news__slider__card__img__ENphm">
+                                    <img alt="Solana Blockchain Node Development Blueprints Available on AWS" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="/img/aws.webp"></div><div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Breakpoint 2023</span><h2 class="h5 mt-3 fw-normal">Solana Blockchain Node Development Blueprints Available on AWS</h2><p class="mb-5 small">Solana nodes are now available for quick deployment on AWS with the help of infrastructure as code app in AWS Blockchain Node Runners repository.</p><a target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift " href="/news/solana-blockchain-node-development-blueprints-available-on-aws">Read</a>
+                                    </div>
+                                </div>
+                          </div>
+                        </div>
+                      
+                        <!--Pagination (Not required)-->
+                        <div class="slider-pagination"></div>
+                      
+                        <!-- Buttons (Not required) -->
+                        <div class="slider-btn slider-btn-prev"></div>
+                        <div class="slider-btn slider-btn-next"></div> 
+                      </div>
+
+                      
+                        <!-- <div class="swiper-container slick-slider slick-initialized" dir="ltr">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="slick-arrow slick-prev" style="display: block;"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                            <div class="swiper-wrapper slick-list">
+                                <div class="slick-track" style="width: 9240px; opacity: 1; transform: translate3d(-840px, 0px, 0px);">
+                                    <div data-index="-1" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 840px;">
+                                      
                                 </div>
                                 <div data-index="0" class="swiper-slide slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 840px;">
                                     <div>
-                                        <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
-                                            <div class="IndexNews_index-news__slider__card__img__ENphm">
-                                                <img alt="Meet the Winners of the Hyperdrive Hackathon" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="/img/hyperdrive.webp">
-                                            </div>
-                                            <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Solana Hackathon</span><h2 class="h5 mt-3 fw-normal">Meet the Winners of the Hyperdrive Hackathon</h2><p class="mb-5 small">As announced live on the Breakpoint 2023 stage, the Grand Champion winner out of over 900 submissions took advantage of AI to make it easy to interact with the blockchain.</p><a target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift " href="/news/solana-hyperdrive-hackathon-winners">See the winners</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                      
                                 </div>
                                 
                                 <div data-index="1" class="swiper-slide slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 840px;">
                                     <div>
-                                        <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
-                                            <div class="IndexNews_index-news__slider__card__img__ENphm">
-                                                <img alt="The Render Network Migrates to Solana" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="img/render.webp">
-                                            </div>
-                                            <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Breakpoint 2023</span><h2 class="h5 mt-3 fw-normal">The Render Network Migrates to Solana</h2><p class="mb-5 small">The Render Network, the world’s leading decentralized compute network, announced on stage at Breakpoint 2023 that they have successfully upgraded its core infrastructure to Solana.</p><a href="https://www.cryptotimes.io/render-network-to-solana-launches-token-incentives/" target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift">Read</a>
-                                            </div>
-                                        </div>
+                                       
                                     </div>
                                 </div>
                                 <div data-index="2" class="swiper-slide slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 840px;">
                                     <div>
-                                        <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
-                                            <div class="IndexNews_index-news__slider__card__img__ENphm">
-                                                <img alt="The Block: “Solana Data Now Live on Google Cloud's BigQuery”" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="/img/google-cloud.webp">
-                                            </div>
-                                            <div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Breakpoint 2023</span><h2 class="h5 mt-3 fw-normal">The Block: “Solana Data Now Live on Google Cloud's BigQuery”</h2><p class="mb-5 small">Google Cloud BigQuery is a resource that allows anyone to access archival data and analytical insights.</p><a href="https://www.theblock.co/post/258770/solana-live-on-google-cloud-bigquery" target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift">Read</a>
-                                            </div>
-                                        </div>
+                                       
                                     </div>
                                 </div>
                                 <div data-index="3" class="swiper-slide slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 840px;">
                                     <div>
-                                        <div class="IndexNews_index-news__slider__card__f2PJ8" tabindex="-1" style="width:100%;display:inline-block">
-                                            <div class="IndexNews_index-news__slider__card__img__ENphm">
-                                                <img alt="Solana Blockchain Node Development Blueprints Available on AWS" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="100vw" src="/img/aws.webp"></div><div class="IndexNews_index-news__slider__card__body__OgEP_"><span class="text-uppercase smaller">Breakpoint 2023</span><h2 class="h5 mt-3 fw-normal">Solana Blockchain Node Development Blueprints Available on AWS</h2><p class="mb-5 small">Solana nodes are now available for quick deployment on AWS with the help of infrastructure as code app in AWS Blockchain Node Runners repository.</p><a target="_blank" rel="noopener noreferrer" class="sc-4ab5d4c4-0 kPXaEl btn lift " href="/news/solana-blockchain-node-development-blueprints-available-on-aws">Read</a>
-                                                </div>
-                                            </div>
+                                       
                                         </div>
                                     </div>
                                     <div data-index="4" class="swiper-slide slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 840px;">
@@ -342,7 +385,7 @@
                                 <li class=""><button>4</button></li>
                                 <li class=""><button>5</button></li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -1115,9 +1158,11 @@
     
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+     
+<script src="https://unpkg.com/simpleslider-js@1.9.0/dist/simpleSlider.min.js"></script> 
 
     <script src="script.js"></script>
 </body>
