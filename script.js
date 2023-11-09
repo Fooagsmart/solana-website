@@ -127,8 +127,36 @@ window.onclick = function(event) {
   }
 }
 
+// // Select all buttons starting from button with id "kl1" up to button with id "kl5"
+// for (let i = 1; i <= 5; i++) {
+//   const button = document.getElementById('kl' + i);
+//   const rotateClass = document.querySelector(`.kl${i - 1}`); // Assuming classes are named rotate0, rotate1, rotate2, etc.
+
+//   button.addEventListener('click', () => {
+//     rotateClass.classList.toggle('angle-down');
+//   });
+// }
 
 
+document.querySelector('#kl1').addEventListener('click', () =>{
+  document.querySelector('.kl0').classList.toggle('angle-down')
+})
+
+document.querySelector('#kl2').addEventListener('click', () =>{
+  document.querySelector('.kl1').classList.toggle('angle-down')
+})
+
+document.querySelector('#kl3').addEventListener('click', () =>{
+  document.querySelector('.kl2').classList.toggle('angle-down')
+})
+
+document.querySelector('#kl4').addEventListener('click', () =>{
+  document.querySelector('.kl3').classList.toggle('angle-down')
+})
+
+document.querySelector('#kl5').addEventListener('click', () =>{
+  document.querySelector('.kl4').classList.toggle('angle-down')
+})
 
 
 
