@@ -324,7 +324,7 @@ img, video {
     top: 100%;
     padding: 1rem;
     background: radial-gradient(farthest-corner at bottom right,rgba(58,35,63,.6),transparent 250px),linear-gradient(180deg,#000 70%,#181222);
-    height: calc(100vh - 68px)!important;
+    height:100vh!important;
     overflow-y: scroll;
 }
 
