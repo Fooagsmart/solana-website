@@ -1,5 +1,6 @@
-const toggleButtons = document.querySelectorAll('.dropdown');
-const dotElements = document.querySelectorAll('.nav-item .show');
+// const toggleButtons = document.querySelectorAll('.dropdown');
+// const dotElements = document.querySelectorAll('.nav-item .show');
+
 const dotElement = document.querySelector('.dropdown-menu-1');
 const dotElemnt = document.querySelector('.dropdown-menu-2');
 const dotElemet = document.querySelector('.dropdown-menu-3');
@@ -60,25 +61,46 @@ daos.addEventListener('click', () => {
 });
 
 
-toggleButtons.forEach((button, index) => {
-  button.addEventListener('click', () => {
-    dotElements.forEach((dot, dotIndex) => {
-     if (index === dotIndex){
-        dot.style.display = 'block'
-      }else{
-        dot.style.display = 'none' 
-      }
-    })
-  })
-})
+// toggleButtons.forEach((button, index) => {
+//   button.addEventListener('click', () => {
+//     dotElements.forEach((dot, dotIndex) => {
+//      if (index === dotIndex){
+//         dot.style.display = 'block'
+//       }else{
+//         dot.style.display = 'none' 
+//       }
+//     })
+//   })
+// })
 
-window.addEventListener('scroll', () => {
-    dotElement.style.display = 'none'
-    dotElemen.style.display = 'none'
-    dotElemet.style.display = 'none'
-    dotElment.style.display = 'none'
-    dotElemnt.style.display = 'none'
-})
+// window.addEventListener('scroll', () => {
+//     dotElement.style.display = 'none'
+//     dotElemen.style.display = 'none'
+//     dotElemet.style.display = 'none'
+//     dotElment.style.display = 'none'
+//     dotElemnt.style.display = 'none'
+// })
+
+  // Function to toggle the dropdown
+  function toggleDropdown() {
+    var dropdown = document.getElementById("myDropdown");
+    dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+  }
+
+  // Function to close the dropdown if the user clicks on it
+  function closeDropdown() {
+    var dropdown = document.getElementById("myDropdown");
+    if (dropdown.style.display === 'block') {
+      dropdown.style.display = 'none';
+    }
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropdown-toggle')) {
+      closeDropdown();
+    }
+  }
 
 
 
