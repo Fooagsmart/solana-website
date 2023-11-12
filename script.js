@@ -262,3 +262,61 @@ new SimpleSlider('.simple-slider-first', {
 // });
 
 // triggerAutoPlay();
+
+
+// javascript
+// // Step 1: Identify the button element
+// const button = document.getElementById("myButton");
+
+// // Step 2: Add event listener for the "click" event
+// button.addEventListener("click", function() {
+//   // Step 3: Modify the button's style to add a border
+//   button.style.border = "1px solid black";
+// });
+
+// // Step 1: Identify the button element
+// const button = document.getElementById("purple");
+
+// // Step 2: Add event listener for the "click" event
+// button.addEventListener("click", function() {
+//   // Step 3: Add the CSS class to the button
+//   button.classList.add("button-with-border");
+// });
+
+// // Step 1: Identify all the button elements
+// const buttons = document.querySelectorAll(".myButton");
+
+// // Step 2: Add event listener for each button
+// buttons.forEach(function(button) {
+//   button.addEventListener("click", function() {
+//     // Step 3: Add the CSS class to the clicked button
+//     button.classList.toggle("button-with-border");
+//   });
+// });
+
+// // Step 1: Identify the button elements
+// const buttons = document.querySelectorAll(".myButton");
+
+// // Step 2: Add event listener for each button
+// buttons.forEach(function(button) {
+//   button.addEventListener("click", function() {
+//     // Step 3: Toggle the CSS class on the clicked button
+//     button.classList.toggle("button-with-border");
+//   });
+// });
+
+// Step 1: Identify all the button elements
+const buttons = document.querySelectorAll(".myButton");
+
+// Step 2: Add event listener for each button
+buttons.forEach(function(button) {
+  button.addEventListener("click", function() {
+    // Step 3: Remove border from all buttons
+    buttons.forEach(function(btn) {
+      btn.classList.remove("button-with-border");
+    });
+
+    // Step 4: Add border to the clicked button
+    button.classList.add("button-with-border");
+  });
+});

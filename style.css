@@ -408,7 +408,6 @@ dropdown-menu-1,
     display: block;
 }
 
-
 /* main 1 */
 
 .IndexHero_index-hero__gLYxm {
@@ -1250,9 +1249,7 @@ element.style {
 .IndexUseCases_index-usecases__nav__rnTUy li {
     display: inline-block;
 }
-.IndexUseCases_index-usecases__nav-item--active__NUWgO {
-    border-color: #a962ff;
-}
+
 .IndexUseCases_index-usecases__nav-item__flEJi {
     padding: .6rem .8rem;
     font-size: 1rem;
@@ -1261,9 +1258,17 @@ element.style {
     color: #fff;
     border-radius: 15px;
 }
+
+
+.button-with-border {
+    border: 2px solid  #a962ff;
+  }
+  
+
 .IndexUseCases_index-usecases__nav-item__flEJi:hover {
     background: #222;
 }
+
 .IndexUseCases_index-usecases__tab-content__PbOjy {
     background-color: #1a1a1a;
     border-radius: 12px;
